@@ -1,26 +1,53 @@
 import { StyleSheet } from "react-native";
+import { SIZES, COLORS } from "../constants";
+
 
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: 10,
-    },
-    errorText: {
-      color: 'red',
-      fontSize: 16,
-    },
-    item: {
-      backgroundColor: '#f9f9f9',
-      padding: 15,
-      marginBottom: 10,
-      borderRadius: 5,
-      width: '100%',
-    },
-    title: {
-      fontSize: 18,
-      fontWeight: 'bold',
-    },
-  });
+  container: {
+    width: "100%"
+  },
+  searchWrapper: {
+    flex: 1,
+    backgroundColor: COLORS.white,
+    marginRight: SIZES.small,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: SIZES.medium,
+    height: "100%",
+  },
+  subContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    padding: SIZES.small,
+    backgroundColor: "#FFF",
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  applyBtn: {
+    flex: 1,
+    backgroundColor: "#FE7654",
+    width: 55,
+    height: 55,
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: SIZES.medium,
+    borderRadius: SIZES.medium,
+  },
+  applyBtnText: {
+    fontSize: SIZES.medium,
+    color: COLORS.white
+  },
+  backBtn: {
+    width: 55,
+    height: 55,
+    borderWidth: 1,
+    borderColor: "#F37453",
+    borderRadius: SIZES.medium,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
