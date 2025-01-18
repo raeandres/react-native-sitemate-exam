@@ -77,7 +77,7 @@ const NewsAPIResultScreen = () => {
         return (
             <View style={styles.container}>
                 <Text style={styles.errorText}>Error: {error}</Text>
-                <Button title="Go Back" onPress={() => navigation.goBack()} />
+                <ActivityIndicator title="Go Back" onPress={() => navigation.goBack()} />
             </View>
         );
     }
